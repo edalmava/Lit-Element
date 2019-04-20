@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenidos a Lit-Element</title>
+</head>
+<body>
+    <h1>Bienvenidos a Lit-Element</h1>
+    <script>
+        class ComponenteTonto extends HTMLElement {
+            constructor() {
+                super();
+            }
+        }
+        customElements.define('componente-tonto', ComponenteTonto);
+    </script>
+    <componente-tonto></componente-tonto>
+    <hola-mundo name="Edalmava"></hola-mundo>
+    <mi-contador></mi-contador>
+    <!--<feedback-element></feedback-element>-->
+    <script src="./src/index.js" type="module"></script>
+    <!--<script src="./dist/main.js"></script>-->
+    <!--<script src="./src/mi-contador.js" type="module"></script>-->
+</body>
+</html>
